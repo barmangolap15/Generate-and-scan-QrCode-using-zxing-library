@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="#fff">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Enter Phone Number"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:textSize="25sp"
+        android:textColor="#000"
+        android:fontFamily="@font/asap_bold"
+        android:padding="5dp"
+        android:visibility="gone"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text"
+        android:textSize="20sp"
+        android:layout_gravity="top"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:textColor="@android:color/black"
+        android:hint="Type here"
+        android:background="@drawable/edittext_background"
+        android:padding="5dp"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:id="@+id/qrcode"
+        android:padding="4dp"
+        android:layout_marginTop="18dp"
+        android:layout_gravity="center"
+        android:background="@android:color/darker_gray"
+        android:visibility="gone"/>
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/generate"
+        android:padding="5dp"
+        android:text="Generate Your QR"
+        android:layout_marginTop="300dp"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:background="@drawable/button_background"
+        />
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/scan"
+        android:padding="4dp"
+        android:layout_marginTop="20sp"
+        android:layout_gravity="center"
+        android:text="Scan"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:background="@drawable/button_background"/>
+
+
+</LinearLayout>
